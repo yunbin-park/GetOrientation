@@ -11,4 +11,12 @@
     android:layout_height="match_parent"
 ></com.androidapp.getorientation.AzimuthView>
 
+    <ImageView
+        android:id="@+id/azimuthView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/compass"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="240dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
