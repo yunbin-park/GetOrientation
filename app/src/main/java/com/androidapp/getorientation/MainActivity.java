@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    TextView txtAzimuth, txtPitch, txtRoll;
+//    TextView txtAzimuth, txtPitch, txtRoll;
     SensorManager sensorManager;
     Sensor magSensor, accSensor;
     SensorEventListener listener;
@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        txtAzimuth = findViewById(R.id.textAzimuth);
-        txtPitch = findViewById(R.id.textPitch);
-        txtRoll = findViewById(R.id.textRoll);
+//        txtAzimuth = findViewById(R.id.textAzimuth);
+//        txtPitch = findViewById(R.id.textPitch);
+//        txtRoll = findViewById(R.id.textRoll);
 
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
 
@@ -57,9 +57,9 @@ public class MainActivity extends AppCompatActivity {
                     } else if((int) radian2Degree(values[0]) == -180) {
                         Toast.makeText(MainActivity.this, "-180", Toast.LENGTH_SHORT);
                     }
-                    txtAzimuth.setText("Azimuth: " + (int) radian2Degree(values[0]));
-                    txtPitch.setText("Pitch: " + (int) radian2Degree(values[1]));
-                    txtRoll.setText("Roll: " + (int) radian2Degree(values[2]));
+//                    txtAzimuth.setText("Azimuth: " + (int) radian2Degree(values[0]));
+//                    txtPitch.setText("Pitch: " + (int) radian2Degree(values[1]));
+//                    txtRoll.setText("Roll: " + (int) radian2Degree(values[2]));
                 }
             }
 
